@@ -36,6 +36,14 @@ yarn-error.log*
 # vercel
 .vercel
 
+# source materials and unused originals (site uses optimized webp)
+/_materials/
+/public/images/**/*.jpg
+/public/images/**/*.jpeg
+/public/images/**/*.png
+/public/images/**/*.tif
+/public/images/**/*.tiff
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

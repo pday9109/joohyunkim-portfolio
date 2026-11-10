@@ -1,0 +1,17 @@
+{
+  "artistName": "김주현",
+  "artistNameEn": "Joohyun Kim",
+  "mainBackgroundImage": "/images/main/main_background.webp",
+  "defaultWorkYear": 2026,
+  "defaultExhibitionTab": "solo",
+  "workYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022,
+    2021,
+    2020,
+    2019
+  ]
+}

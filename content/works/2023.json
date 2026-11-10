@@ -1,0 +1,155 @@
+{
+  "year": 2023,
+  "artworks": [
+    {
+      "id": "work_01",
+      "order": 1,
+      "title": "Wind-bell",
+      "material": "Acrylic on Canvas",
+      "size": "162.3x112cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_01_main.webp",
+      "imageFull": "/images/works/2023/work_01_full.webp"
+    },
+    {
+      "id": "work_02",
+      "order": 2,
+      "title": "Wood Grain",
+      "material": "Acrylic on Canvas",
+      "size": "96.6x162.3cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_02_main.webp",
+      "imageFull": "/images/works/2023/work_02_full.webp"
+    },
+    {
+      "id": "work_03",
+      "order": 3,
+      "title": "Billow",
+      "material": "Acrylic on Canvas",
+      "size": "90.8x64.8cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_03_main.webp",
+      "imageFull": "/images/works/2023/work_03_full.webp"
+    },
+    {
+      "id": "work_04",
+      "order": 4,
+      "title": "Dusk",
+      "material": "Acrylic on Canvas",
+      "size": "162x112cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_04_main.webp",
+      "imageFull": "/images/works/2023/work_04_full.webp"
+    },
+    {
+      "id": "work_05",
+      "order": 5,
+      "title": "Wet fog",
+      "material": "Acrylic on Canvas",
+      "size": "162.2x90.8cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_05_main.webp",
+      "imageFull": "/images/works/2023/work_05_full.webp"
+    },
+    {
+      "id": "work_06",
+      "order": 6,
+      "title": "Sunlight",
+      "material": "Acrylic on Canvas",
+      "size": "116.2x90.8cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_06_main.webp",
+      "imageFull": "/images/works/2023/work_06_full.webp"
+    },
+    {
+      "id": "work_07",
+      "order": 7,
+      "title": "Thick fog",
+      "material": "Acrylic on Canvas",
+      "size": "116.2x90.8cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_07_main.webp",
+      "imageFull": "/images/works/2023/work_07_full.webp"
+    },
+    {
+      "id": "work_08",
+      "order": 8,
+      "title": "Bark",
+      "material": "Acrylic on Canvas",
+      "size": "162.3x112cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_08_main.webp",
+      "imageFull": "/images/works/2023/work_08_full.webp"
+    },
+    {
+      "id": "work_09",
+      "order": 9,
+      "title": "Shimmer",
+      "material": "Acrylic on Canvas",
+      "size": "25.8x35.2cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_09_main.webp",
+      "imageFull": "/images/works/2023/work_09_full.webp"
+    },
+    {
+      "id": "work_10",
+      "order": 10,
+      "title": "Wood",
+      "material": "Acrylic on Canvas",
+      "size": "33.5x24cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_10_main.webp",
+      "imageFull": "/images/works/2023/work_10_full.webp"
+    },
+    {
+      "id": "work_11",
+      "order": 11,
+      "title": "Trail",
+      "material": "Acrylic on Canvas",
+      "size": "26.8x22cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_11_main.webp",
+      "imageFull": "/images/works/2023/work_11_full.webp"
+    },
+    {
+      "id": "work_12",
+      "order": 12,
+      "title": "Yellow Breeze",
+      "material": "Acrylic on Canvas",
+      "size": "29.8x30cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_12_main.webp",
+      "imageFull": "/images/works/2023/work_12_full.webp"
+    },
+    {
+      "id": "work_13",
+      "order": 13,
+      "title": "Airleaf",
+      "material": "Acrylic on Canvas",
+      "size": "34.7x27.3cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_13_main.webp",
+      "imageFull": "/images/works/2023/work_13_full.webp"
+    },
+    {
+      "id": "work_14",
+      "order": 14,
+      "title": "Spring Breeze",
+      "material": "Acrylic on Canvas",
+      "size": "33.5x24cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_14_main.webp",
+      "imageFull": "/images/works/2023/work_14_full.webp"
+    },
+    {
+      "id": "work_15",
+      "order": 15,
+      "title": "Stillness",
+      "material": "Acrylic on Canvas",
+      "size": "33.5x24cm",
+      "year": 2023,
+      "image": "/images/works/2023/work_15_main.webp",
+      "imageFull": "/images/works/2023/work_15_full.webp"
+    }
+  ]
+}

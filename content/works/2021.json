@@ -1,0 +1,95 @@
+{
+  "year": 2021,
+  "artworks": [
+    {
+      "id": "work_01",
+      "order": 1,
+      "title": "Mossy",
+      "material": "Acrylic on Canvas",
+      "size": "145.5x112.1cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_01_main.webp",
+      "imageFull": "/images/works/2021/work_01_full.webp"
+    },
+    {
+      "id": "work_02",
+      "order": 2,
+      "title": "Chypre",
+      "material": "Acrylic on Canvas",
+      "size": "100x80cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_02_main.webp",
+      "imageFull": "/images/works/2021/work_02_full.webp"
+    },
+    {
+      "id": "work_03",
+      "order": 3,
+      "title": "Chroma",
+      "material": "Acrylic on Canvas",
+      "size": "116x90.7cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_03_main.webp",
+      "imageFull": "/images/works/2021/work_03_full.webp"
+    },
+    {
+      "id": "work_04",
+      "order": 4,
+      "title": "Petrichor",
+      "material": "Acrylic on Canvas",
+      "size": "194x130cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_04_main.webp",
+      "imageFull": "/images/works/2021/work_04_full.webp"
+    },
+    {
+      "id": "work_05",
+      "order": 5,
+      "title": "Untitled",
+      "material": "Acrylic on Canvas",
+      "size": "130x194cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_05_main.webp",
+      "imageFull": "/images/works/2021/work_05_full.webp"
+    },
+    {
+      "id": "work_06",
+      "order": 6,
+      "title": "Submerged Light",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x91cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_06_main.webp",
+      "imageFull": "/images/works/2021/work_06_full.webp"
+    },
+    {
+      "id": "work_07",
+      "order": 7,
+      "title": "Veil of Fog 1",
+      "material": "Acrylic on Canvas",
+      "size": "72.7x60.6cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_07_main.webp",
+      "imageFull": "/images/works/2021/work_07_full.webp"
+    },
+    {
+      "id": "work_08",
+      "order": 8,
+      "title": "Veil of Fog 2",
+      "material": "Acrylic on Canvas",
+      "size": "72.7x60.6cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_08_main.webp",
+      "imageFull": "/images/works/2021/work_08_full.webp"
+    },
+    {
+      "id": "work_09",
+      "order": 9,
+      "title": "Snipid",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x80.3cm",
+      "year": 2021,
+      "image": "/images/works/2021/work_09_main.webp",
+      "imageFull": "/images/works/2021/work_09_full.webp"
+    }
+  ]
+}

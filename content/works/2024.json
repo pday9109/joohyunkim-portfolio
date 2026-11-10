@@ -1,0 +1,45 @@
+{
+  "year": 2024,
+  "artworks": [
+    {
+      "id": "work_01",
+      "order": 1,
+      "title": "Seascape",
+      "material": "Acrylic and Oil on Canvas",
+      "size": "194x130cm",
+      "year": 2024,
+      "image": "/images/works/2024/work_01_main.webp",
+      "imageFull": "/images/works/2024/work_01_full.webp"
+    },
+    {
+      "id": "work_02",
+      "order": 2,
+      "title": "Snowscape",
+      "material": "Acrylic on canvas",
+      "size": "19.5x27.5cm",
+      "year": 2024,
+      "image": "/images/works/2024/work_02_main.webp",
+      "imageFull": "/images/works/2024/work_02_full.webp"
+    },
+    {
+      "id": "work_03",
+      "order": 3,
+      "title": "Covered in Fog",
+      "material": "Acrylic and Oil on Canvas",
+      "size": "194x130cm",
+      "year": 2024,
+      "image": "/images/works/2024/work_03_main.webp",
+      "imageFull": "/images/works/2024/work_03_full.webp"
+    },
+    {
+      "id": "work_04",
+      "order": 4,
+      "title": "Evening Glow",
+      "material": "Acrylic on Canvas",
+      "size": "29x24.2cm",
+      "year": 2024,
+      "image": "/images/works/2024/work_04_main.webp",
+      "imageFull": "/images/works/2024/work_04_full.webp"
+    }
+  ]
+}

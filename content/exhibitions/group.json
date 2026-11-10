@@ -1,0 +1,166 @@
+{
+  "type": "group",
+  "exhibitions": [
+    {
+      "id": "2021_견고하고_유연하게",
+      "title": "견고하고 유연하게",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2021_견고하고_유연하게/installation_01.webp",
+        "/images/exhibitions/group/2021_견고하고_유연하게/installation_02.webp",
+        "/images/exhibitions/group/2021_견고하고_유연하게/installation_03.webp",
+        "/images/exhibitions/group/2021_견고하고_유연하게/installation_04.webp",
+        "/images/exhibitions/group/2021_견고하고_유연하게/installation_05.webp",
+        "/images/exhibitions/group/2021_견고하고_유연하게/installation_06.webp",
+        "/images/exhibitions/group/2021_견고하고_유연하게/installation_07.webp"
+      ]
+    },
+    {
+      "id": "2022_페블스",
+      "title": "페블스",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2022_페블스/installation_01.webp"
+      ]
+    },
+    {
+      "id": "2023_4_needles",
+      "title": "4 NEEDLES",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2023_4_needles/installation_01.webp",
+        "/images/exhibitions/group/2023_4_needles/preface_01.webp",
+        "/images/exhibitions/group/2023_4_needles/installation_02.webp",
+        "/images/exhibitions/group/2023_4_needles/installation_03.webp",
+        "/images/exhibitions/group/2023_4_needles/installation_04.webp",
+        "/images/exhibitions/group/2023_4_needles/installation_05.webp"
+      ]
+    },
+    {
+      "id": "2023_기억흔적",
+      "title": "기억흔적",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2023_기억흔적/installation_01.webp",
+        "/images/exhibitions/group/2023_기억흔적/preface_01.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_02.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_03.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_04.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_05.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_06.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_07.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_08.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_09.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_10.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_11.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_12.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_13.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_14.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_15.webp",
+        "/images/exhibitions/group/2023_기억흔적/installation_16.webp"
+      ]
+    },
+    {
+      "id": "2024_fe_yi",
+      "title": "fe,yi",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2024_fe_yi/installation_01.webp",
+        "/images/exhibitions/group/2024_fe_yi/preface_01.webp",
+        "/images/exhibitions/group/2024_fe_yi/preface_02.webp",
+        "/images/exhibitions/group/2024_fe_yi/preface_03.webp",
+        "/images/exhibitions/group/2024_fe_yi/preface_04.webp",
+        "/images/exhibitions/group/2024_fe_yi/preface_05.webp",
+        "/images/exhibitions/group/2024_fe_yi/installation_02.webp",
+        "/images/exhibitions/group/2024_fe_yi/installation_03.webp",
+        "/images/exhibitions/group/2024_fe_yi/installation_04.webp",
+        "/images/exhibitions/group/2024_fe_yi/installation_05.webp",
+        "/images/exhibitions/group/2024_fe_yi/installation_06.webp",
+        "/images/exhibitions/group/2024_fe_yi/installation_07.webp",
+        "/images/exhibitions/group/2024_fe_yi/installation_08.webp"
+      ]
+    },
+    {
+      "id": "2025_gnossiennes_sur_les_murs",
+      "title": "Gnossiennes  sur les murs",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_01.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/preface_01.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/preface_02.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_02.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_03.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_04.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_05.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_06.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_07.webp",
+        "/images/exhibitions/group/2025_gnossiennes_sur_les_murs/installation_08.webp"
+      ]
+    },
+    {
+      "id": "2025_small_paintings_my_bijou",
+      "title": "Small paintings - My bijou!",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2025_small_paintings_my_bijou/installation_01.webp",
+        "/images/exhibitions/group/2025_small_paintings_my_bijou/preface_01.webp",
+        "/images/exhibitions/group/2025_small_paintings_my_bijou/installation_02.webp",
+        "/images/exhibitions/group/2025_small_paintings_my_bijou/installation_03.webp",
+        "/images/exhibitions/group/2025_small_paintings_my_bijou/installation_04.webp"
+      ]
+    },
+    {
+      "id": "2025_soft_landing",
+      "title": "Soft Landing",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2025_soft_landing/installation_01.webp",
+        "/images/exhibitions/group/2025_soft_landing/installation_02.webp"
+      ]
+    },
+    {
+      "id": "2025_감춰진_흐름_hidden_flow",
+      "title": "감춰진 흐름 Hidden Flow",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2025_감춰진_흐름_hidden_flow/installation_01.webp",
+        "/images/exhibitions/group/2025_감춰진_흐름_hidden_flow/installation_02.webp",
+        "/images/exhibitions/group/2025_감춰진_흐름_hidden_flow/installation_03.webp",
+        "/images/exhibitions/group/2025_감춰진_흐름_hidden_flow/installation_04.webp"
+      ]
+    },
+    {
+      "id": "2025_흔들이",
+      "title": "흔들이",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2025_흔들이/installation_01.webp",
+        "/images/exhibitions/group/2025_흔들이/preface_01.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_02.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_03.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_04.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_05.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_06.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_07.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_08.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_09.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_10.webp",
+        "/images/exhibitions/group/2025_흔들이/installation_11.webp"
+      ]
+    },
+    {
+      "id": "2026_임박한_회화",
+      "title": "임박한 회화",
+      "text": "",
+      "images": [
+        "/images/exhibitions/group/2026_임박한_회화/installation_01.webp",
+        "/images/exhibitions/group/2026_임박한_회화/preface_01.webp",
+        "/images/exhibitions/group/2026_임박한_회화/preface_02.webp",
+        "/images/exhibitions/group/2026_임박한_회화/installation_02.webp",
+        "/images/exhibitions/group/2026_임박한_회화/installation_03.webp",
+        "/images/exhibitions/group/2026_임박한_회화/installation_04.webp",
+        "/images/exhibitions/group/2026_임박한_회화/installation_05.webp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "year": 2022,
+  "artworks": [
+    {
+      "id": "work_01",
+      "order": 1,
+      "title": "Grain",
+      "material": "Acrylic on Canvas",
+      "size": "140x66cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_01_main.webp",
+      "imageFull": "/images/works/2022/work_01_full.webp"
+    },
+    {
+      "id": "work_02",
+      "order": 2,
+      "title": "Spring Rain",
+      "material": "Acrylic on Canvas",
+      "size": "162x129.5cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_02_main.webp",
+      "imageFull": "/images/works/2022/work_02_full.webp"
+    },
+    {
+      "id": "work_03",
+      "order": 3,
+      "title": "Beneath the Surface",
+      "material": "Acrylic on Canvas",
+      "size": "90.8x117cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_03_main.webp",
+      "imageFull": "/images/works/2022/work_03_full.webp"
+    },
+    {
+      "id": "work_04",
+      "order": 4,
+      "title": "Interior #2",
+      "material": "Acrylic on Canvas",
+      "size": "80.3x116.5cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_04_main.webp",
+      "imageFull": "/images/works/2022/work_04_full.webp"
+    },
+    {
+      "id": "work_05",
+      "order": 5,
+      "title": "Interior #1",
+      "material": "Acrylic on Canvas",
+      "size": "91x73cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_05_main.webp",
+      "imageFull": "/images/works/2022/work_05_full.webp"
+    },
+    {
+      "id": "work_06",
+      "order": 6,
+      "title": "Rip Tide",
+      "material": "Acrylic on Canvas",
+      "size": "72.5x53cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_06_main.webp",
+      "imageFull": "/images/works/2022/work_06_full.webp"
+    },
+    {
+      "id": "work_07",
+      "order": 7,
+      "title": "Middle Passage",
+      "material": "Acrylic on Canvas",
+      "size": "90.8x60.7cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_07_main.webp",
+      "imageFull": "/images/works/2022/work_07_full.webp"
+    },
+    {
+      "id": "work_08",
+      "order": 8,
+      "title": "Grain #2",
+      "material": "Acrylic on Canvas",
+      "size": "30x30cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_08_main.webp",
+      "imageFull": "/images/works/2022/work_08_full.webp"
+    },
+    {
+      "id": "work_09",
+      "order": 9,
+      "title": "Marine Landform",
+      "material": "Acrylic on Canvas",
+      "size": "41x31.7cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_09_main.webp",
+      "imageFull": "/images/works/2022/work_09_full.webp"
+    },
+    {
+      "id": "work_10",
+      "order": 10,
+      "title": "Trails",
+      "material": "Acrylic on Canvas",
+      "size": "35x26.7cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_10_main.webp",
+      "imageFull": "/images/works/2022/work_10_full.webp"
+    },
+    {
+      "id": "work_11",
+      "order": 11,
+      "title": "Marine Landform #2",
+      "material": "Acrylic on Canvas",
+      "size": "33.5x24cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_11_main.webp",
+      "imageFull": "/images/works/2022/work_11_full.webp"
+    },
+    {
+      "id": "work_12",
+      "order": 12,
+      "title": "Inner Ground",
+      "material": "Acrylic on Canvas",
+      "size": "40x40cm",
+      "year": 2022,
+      "image": "/images/works/2022/work_12_main.webp",
+      "imageFull": "/images/works/2022/work_12_full.webp"
+    }
+  ]
+}

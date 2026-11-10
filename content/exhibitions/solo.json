@@ -1,0 +1,71 @@
+{
+  "type": "solo",
+  "exhibitions": [
+    {
+      "id": "flow_of_things_2022",
+      "title": "Flow of Things (2022)",
+      "text": "",
+      "images": [
+        "/images/exhibitions/solo/flow_of_things_2022/installation_01.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/preface_01.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/preface_02.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_02.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_03.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_04.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_05.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_06.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_07.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_08.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_09.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_10.webp",
+        "/images/exhibitions/solo/flow_of_things_2022/installation_11.webp"
+      ]
+    },
+    {
+      "id": "갓_구운_마들렌_2023",
+      "title": "갓 구운 마들렌 (2023)",
+      "text": "",
+      "images": [
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_01.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/preface_01.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_02.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_03.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_04.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_05.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_06.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_07.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_08.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_09.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_10.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_11.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_12.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_13.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_14.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_15.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_16.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_17.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_18.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_19.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_20.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_21.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_22.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_23.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_24.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_25.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_26.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_27.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_28.webp",
+        "/images/exhibitions/solo/갓_구운_마들렌_2023/installation_29.webp"
+      ]
+    },
+    {
+      "id": "녹색광선_2019",
+      "title": "녹색광선 (2019)",
+      "text": "",
+      "images": [
+        "/images/exhibitions/solo/녹색광선_2019/installation_01.webp",
+        "/images/exhibitions/solo/녹색광선_2019/preface_01.webp"
+      ]
+    }
+  ]
+}

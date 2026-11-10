@@ -1,0 +1,115 @@
+{
+  "year": 2025,
+  "artworks": [
+    {
+      "id": "work_01",
+      "order": 1,
+      "title": "Density of Warmth",
+      "material": "Acrylic on Canvas",
+      "size": "162x130cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_01_main.webp",
+      "imageFull": "/images/works/2025/work_01_full.webp"
+    },
+    {
+      "id": "work_02",
+      "order": 2,
+      "title": "Mist Over Moss",
+      "material": "Acrylic on Canvas",
+      "size": "91x91cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_02_main.webp",
+      "imageFull": "/images/works/2025/work_02_full.webp"
+    },
+    {
+      "id": "work_03",
+      "order": 3,
+      "title": "Red Depth",
+      "material": "Acrylic on Canvas",
+      "size": "116.7x72.7cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_03_main.webp",
+      "imageFull": "/images/works/2025/work_03_full.webp"
+    },
+    {
+      "id": "work_04",
+      "order": 4,
+      "title": "Ember Flow",
+      "material": "Acrylic on Canvas",
+      "size": "65x46cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_04_main.webp",
+      "imageFull": "/images/works/2025/work_04_full.webp"
+    },
+    {
+      "id": "work_05",
+      "order": 5,
+      "title": "Sunken LIght",
+      "material": "Acrylic on Canvas",
+      "size": "60.5x91cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_05_main.webp",
+      "imageFull": "/images/works/2025/work_05_full.webp"
+    },
+    {
+      "id": "work_06",
+      "order": 6,
+      "title": "Linger",
+      "material": "Acrylic on Canvas",
+      "size": "117x91cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_06_main.webp",
+      "imageFull": "/images/works/2025/work_06_full.webp"
+    },
+    {
+      "id": "work_07",
+      "order": 7,
+      "title": "Earthbound Mist",
+      "material": "Acrylic on Canvas",
+      "size": "117x91cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_07_main.webp",
+      "imageFull": "/images/works/2025/work_07_full.webp"
+    },
+    {
+      "id": "work_08",
+      "order": 8,
+      "title": "Blue Silence",
+      "material": "Acrylic on Canvas",
+      "size": "65.1x53cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_08_main.webp",
+      "imageFull": "/images/works/2025/work_08_full.webp"
+    },
+    {
+      "id": "work_09",
+      "order": 9,
+      "title": "Borderline",
+      "material": "Acrylic on Canvas",
+      "size": "65.1x53cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_09_main.webp",
+      "imageFull": "/images/works/2025/work_09_full.webp"
+    },
+    {
+      "id": "work_10",
+      "order": 10,
+      "title": "Early Spring",
+      "material": "Acrylic on Canvas",
+      "size": "65.1x50cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_10_main.webp",
+      "imageFull": "/images/works/2025/work_10_full.webp"
+    },
+    {
+      "id": "work_11",
+      "order": 11,
+      "title": "Fallen Place",
+      "material": "Acrylic on Canvas",
+      "size": "65.1x50cm",
+      "year": 2025,
+      "image": "/images/works/2025/work_11_main.webp",
+      "imageFull": "/images/works/2025/work_11_full.webp"
+    }
+  ]
+}

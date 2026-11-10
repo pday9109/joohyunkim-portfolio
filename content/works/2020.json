@@ -1,0 +1,115 @@
+{
+  "year": 2020,
+  "artworks": [
+    {
+      "id": "work_01",
+      "order": 1,
+      "title": "Fading Landscape 1",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x91cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_01_main.webp",
+      "imageFull": "/images/works/2020/work_01_full.webp"
+    },
+    {
+      "id": "work_02",
+      "order": 2,
+      "title": "Fading Landscape 2",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x80.3cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_02_main.webp",
+      "imageFull": "/images/works/2020/work_02_full.webp"
+    },
+    {
+      "id": "work_03",
+      "order": 3,
+      "title": "Fading Landscape 3",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x91cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_03_main.webp",
+      "imageFull": "/images/works/2020/work_03_full.webp"
+    },
+    {
+      "id": "work_04",
+      "order": 4,
+      "title": "Between Light and Shadow",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x91cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_04_main.webp",
+      "imageFull": "/images/works/2020/work_04_full.webp"
+    },
+    {
+      "id": "work_05",
+      "order": 5,
+      "title": "Tangled Landscape",
+      "material": "Acrylic on Canvas",
+      "size": "140x66cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_05_main.webp",
+      "imageFull": "/images/works/2020/work_05_full.webp"
+    },
+    {
+      "id": "work_06",
+      "order": 6,
+      "title": "Falling Light",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x80.3cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_06_main.webp",
+      "imageFull": "/images/works/2020/work_06_full.webp"
+    },
+    {
+      "id": "work_07",
+      "order": 7,
+      "title": "A Trace of Light 1",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x91cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_07_main.webp",
+      "imageFull": "/images/works/2020/work_07_full.webp"
+    },
+    {
+      "id": "work_08",
+      "order": 8,
+      "title": "A Trace of Light 2",
+      "material": "Acrylic on Canvas",
+      "size": "116.8x80.3cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_08_main.webp",
+      "imageFull": "/images/works/2020/work_08_full.webp"
+    },
+    {
+      "id": "work_09",
+      "order": 9,
+      "title": "Surface Flow",
+      "material": "Acrylic on Canvas",
+      "size": "40x40cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_09_main.webp",
+      "imageFull": "/images/works/2020/work_09_full.webp"
+    },
+    {
+      "id": "work_10",
+      "order": 10,
+      "title": "Dissolved Form",
+      "material": "Acrylic on Canvas",
+      "size": "33.5x24cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_10_main.webp",
+      "imageFull": "/images/works/2020/work_10_full.webp"
+    },
+    {
+      "id": "work_11",
+      "order": 11,
+      "title": "Falling Through",
+      "material": "Acrylic on Canvas",
+      "size": "40x40cm",
+      "year": 2020,
+      "image": "/images/works/2020/work_11_main.webp",
+      "imageFull": "/images/works/2020/work_11_full.webp"
+    }
+  ]
+}

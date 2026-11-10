@@ -1,0 +1,95 @@
+{
+  "year": 2019,
+  "artworks": [
+    {
+      "id": "work_01",
+      "order": 1,
+      "title": "Untitled (Green Ray Series No.1)",
+      "material": "Acrylic on Canvas",
+      "size": "100x162.1cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_01_main.webp",
+      "imageFull": "/images/works/2019/work_01_full.webp"
+    },
+    {
+      "id": "work_02",
+      "order": 2,
+      "title": "Untitled (Green Ray Series No.2)",
+      "material": "Acrylic on Canvas",
+      "size": "162.1x130.3cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_02_main.webp",
+      "imageFull": "/images/works/2019/work_02_full.webp"
+    },
+    {
+      "id": "work_03",
+      "order": 3,
+      "title": "Untitled (Green Ray Series No.3)",
+      "material": "Acrylic on Canvas",
+      "size": "135x140cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_03_main.webp",
+      "imageFull": "/images/works/2019/work_03_full.webp"
+    },
+    {
+      "id": "work_04",
+      "order": 4,
+      "title": "Untitled (Green Ray Series No.5)",
+      "material": "Acrylic on Canvas",
+      "size": "135x140cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_04_main.webp",
+      "imageFull": "/images/works/2019/work_04_full.webp"
+    },
+    {
+      "id": "work_05",
+      "order": 5,
+      "title": "Untitled (Green Ray Series No.6)",
+      "material": "Acrylic on Canvas",
+      "size": "162.1x130.3cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_05_main.webp",
+      "imageFull": "/images/works/2019/work_05_full.webp"
+    },
+    {
+      "id": "work_06",
+      "order": 6,
+      "title": "Untitled (Green Ray Series No.7)",
+      "material": "Acrylic on Canvas",
+      "size": "135x140cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_06_main.webp",
+      "imageFull": "/images/works/2019/work_06_full.webp"
+    },
+    {
+      "id": "work_07",
+      "order": 7,
+      "title": "Untitled (Green Ray Series No.8)",
+      "material": "Acrylic on Canvas",
+      "size": "162.1x100cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_07_main.webp",
+      "imageFull": "/images/works/2019/work_07_full.webp"
+    },
+    {
+      "id": "work_08",
+      "order": 8,
+      "title": "Untitled",
+      "material": "Acrylic on Canvas",
+      "size": "135x140cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_08_main.webp",
+      "imageFull": "/images/works/2019/work_08_full.webp"
+    },
+    {
+      "id": "work_09",
+      "order": 9,
+      "title": "Untitled (Green Ray Series No.10)",
+      "material": "Acrylic on Canvas",
+      "size": "135x140cm",
+      "year": 2019,
+      "image": "/images/works/2019/work_09_main.webp",
+      "imageFull": "/images/works/2019/work_09_full.webp"
+    }
+  ]
+}
