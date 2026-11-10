@@ -1,31 +1,34 @@
 import { Suspense } from "react";
 
-import { ArtworkGrid } from "@/components/work/ArtworkGrid";
-import { YearFilter } from "@/components/work/YearFilter";
+import { WorkBrowser, WorkYearView } from "@/components/work/WorkBrowser";
 import { getSiteConfig } from "@/lib/data/getSiteConfig";
 import { getWorksByYear } from "@/lib/data/getWorksByYear";
+import type { Artwork } from "@/lib/types/artwork";
 
-interface WorkPageProps {
-  searchParams: Promise<{ year?: string }>;
-}
-
-export default async function WorkPage({ searchParams }: WorkPageProps) {
+export default async function WorkPage() {
   const site = await getSiteConfig();
-  const params = await searchParams;
-  const requestedYear = Number(params.year);
-  const activeYear = site.workYears.includes(requestedYear)
-    ? requestedYear
-    : site.defaultWorkYear;
 
-  const workData = await getWorksByYear(activeYear);
-  const sortedArtworks = [...workData.artworks].sort((a, b) => a.order - b.order);
+  const worksByYear: Record<number, Artwork[]> = {};
+  for (const year of site.workYears) {
+    const workData = await getWorksByYear(year);
+    worksByYear[year] = [...workData.artworks].sort((a, b) => a.order - b.order);
+  }
 
   return (
-    <>
-      <Suspense fallback={<div className="mb-12 h-8" />}>
-        <YearFilter years={site.workYears} activeYear={activeYear} />
-      </Suspense>
-      <ArtworkGrid artworks={sortedArtworks} />
-    </>
+    <Suspense
+      fallback={
+        <WorkYearView
+          years={site.workYears}
+          activeYear={site.defaultWorkYear}
+          worksByYear={worksByYear}
+        />
+      }
+    >
+      <WorkBrowser
+        years={site.workYears}
+        defaultYear={site.defaultWorkYear}
+        worksByYear={worksByYear}
+      />
+    </Suspense>
   );
 }

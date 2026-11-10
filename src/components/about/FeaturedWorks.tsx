@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import type { Artwork } from "@/lib/types/artwork";
+import { assetPath } from "@/lib/utils/assetPath";
 
 interface FeaturedWorksProps {
   artworks: Artwork[];
@@ -40,7 +41,7 @@ export function FeaturedWorks({ artworks }: FeaturedWorksProps) {
             <Link href="/work" className="group block">
               <div className="overflow-hidden bg-white/40">
                 <Image
-                  src={artwork.image}
+                  src={assetPath(artwork.image)}
                   alt={artwork.title}
                   width={0}
                   height={0}

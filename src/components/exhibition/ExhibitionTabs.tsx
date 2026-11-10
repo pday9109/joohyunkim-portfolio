@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import { Tab } from "@/components/ui/Tab";
 import type { ExhibitionType } from "@/lib/types/exhibition";
@@ -16,12 +16,8 @@ const tabs: { id: ExhibitionType; label: string; subLabel: string }[] = [
 
 export function ExhibitionTabs({ activeTab }: ExhibitionTabsProps) {
   const router = useRouter();
-  const searchParams = useSearchParams();
-
   const handleSelect = (tab: ExhibitionType) => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.set("tab", tab);
-    router.push(`/work/exhibition?${params.toString()}`);
+    router.push(`/work/exhibition/?tab=${tab}`);
   };
 
   return (

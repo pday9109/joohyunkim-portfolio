@@ -4,6 +4,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 
 import type { Artwork } from "@/lib/types/artwork";
+import { assetPath } from "@/lib/utils/assetPath";
 
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
@@ -22,7 +23,7 @@ export function ArtworkLightbox({
   onClose,
 }: ArtworkLightboxProps) {
   const slides = artworks.map((artwork) => ({
-    src: artwork.imageFull ?? artwork.image,
+    src: assetPath(artwork.imageFull ?? artwork.image),
     title: artwork.title,
     description: `${artwork.material} · ${artwork.size} · ${artwork.year}`,
   }));

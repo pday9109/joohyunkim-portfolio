@@ -5,6 +5,7 @@ import { ContactAnimatedContent } from "@/components/contact/ContactAnimatedCont
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { getContact } from "@/lib/data/getContact";
 import { pageMetadata } from "@/lib/metadata";
+import { assetPath } from "@/lib/utils/assetPath";
 
 export const metadata: Metadata = pageMetadata(
   "Contact",
@@ -20,7 +21,7 @@ export default async function ContactPage() {
     <SiteLayout>
       <main className="relative flex min-h-[calc(100vh-4.5rem)] flex-col overflow-hidden">
         <Image
-          src={backgroundImage}
+          src={assetPath(backgroundImage)}
           alt=""
           fill
           priority

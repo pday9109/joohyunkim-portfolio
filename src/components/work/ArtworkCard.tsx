@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import type { Artwork } from "@/lib/types/artwork";
+import { assetPath } from "@/lib/utils/assetPath";
 
 interface ArtworkCardProps {
   artwork: Artwork;
@@ -17,7 +18,7 @@ export function ArtworkCard({ artwork, onClick }: ArtworkCardProps) {
     >
       <div className="overflow-hidden bg-white/40">
         <Image
-          src={artwork.image}
+          src={assetPath(artwork.image)}
           alt={artwork.title}
           width={0}
           height={0}

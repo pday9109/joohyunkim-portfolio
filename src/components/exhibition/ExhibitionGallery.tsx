@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 
+import { assetPath } from "@/lib/utils/assetPath";
+
 import "yet-another-react-lightbox/styles.css";
 
 interface ExhibitionGalleryProps {
@@ -16,7 +18,7 @@ export function ExhibitionGallery({ title, images }: ExhibitionGalleryProps) {
   const [index, setIndex] = useState(0);
 
   const slides = images.map((src, imageIndex) => ({
-    src,
+    src: assetPath(src),
     alt: `${title} installation ${imageIndex + 1}`,
   }));
 
@@ -35,7 +37,7 @@ export function ExhibitionGallery({ title, images }: ExhibitionGalleryProps) {
             aria-label={`${title} 전시 전경 ${imageIndex + 1} 확대`}
           >
             <Image
-              src={image}
+              src={assetPath(image)}
               alt={`${title} installation ${imageIndex + 1}`}
               width={0}
               height={0}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { MainNav } from "@/components/layout/MainNav";
+import { assetPath } from "@/lib/utils/assetPath";
 
 interface IntroScreenProps {
   artistNameEn: string;
@@ -11,7 +12,7 @@ export function IntroScreen({ artistNameEn, backgroundImage }: IntroScreenProps)
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
       <Image
-        src={backgroundImage}
+        src={assetPath(backgroundImage)}
         alt=""
         fill
         priority

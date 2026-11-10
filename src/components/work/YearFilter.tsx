@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import { Tab } from "@/components/ui/Tab";
 
@@ -11,12 +11,8 @@ interface YearFilterProps {
 
 export function YearFilter({ years, activeYear }: YearFilterProps) {
   const router = useRouter();
-  const searchParams = useSearchParams();
-
   const handleSelect = (year: number) => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.set("year", String(year));
-    router.push(`/work?${params.toString()}`);
+    router.push(`/work/?year=${year}`);
   };
 
   return (
