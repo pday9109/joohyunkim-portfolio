@@ -58,7 +58,7 @@ export function MainNav({ className, variant = "default" }: MainNavProps) {
   }
 
   return (
-    <nav className={cn("flex items-center justify-center gap-6 md:gap-10", className)}>
+    <nav className={cn("flex items-center justify-center gap-4 md:gap-10", className)}>
       {mainNavItems.map((item) => {
         const isActive = isNavActive(pathname, item.href);
 
@@ -67,7 +67,7 @@ export function MainNav({ className, variant = "default" }: MainNavProps) {
             key={item.href}
             href={item.href}
             className={cn(
-              "font-[family-name:var(--font-display)] text-sm tracking-[0.2em] text-text uppercase transition-opacity duration-200 hover:opacity-60",
+              "font-[family-name:var(--font-display)] text-xs tracking-[0.12em] text-text uppercase md:text-sm md:tracking-[0.2em] transition-opacity duration-200 hover:opacity-60",
               isActive && "opacity-100 underline decoration-border underline-offset-8",
               !isActive && "opacity-70",
             )}

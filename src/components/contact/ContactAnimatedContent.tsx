@@ -51,20 +51,20 @@ export function ContactAnimatedContent({
 
   return (
     <>
-      <AnimatedBlock visible={visible} delay={150} className="mb-12">
-        <h1 className="font-[family-name:var(--font-display)] text-3xl tracking-wide text-white md:text-4xl">
+      <AnimatedBlock visible={visible} delay={150} className="mb-8 md:mb-12">
+        <h1 className="font-[family-name:var(--font-display)] text-2xl tracking-wide text-white md:text-4xl">
           Contact
         </h1>
       </AnimatedBlock>
 
-      <div className="space-y-10">
+      <div className="space-y-8 md:space-y-10">
         <AnimatedBlock visible={visible} delay={350} className="space-y-2">
           <p className="text-xs tracking-[0.2em] text-white/55 uppercase">
             Email
           </p>
           <a
             href={`mailto:${email}`}
-            className="font-[family-name:var(--font-display)] text-xl tracking-wide text-white/85 transition-opacity hover:text-white"
+            className="font-[family-name:var(--font-display)] text-base break-all tracking-normal text-white/85 transition-opacity hover:text-white md:text-xl md:tracking-wide"
           >
             {email}
           </a>
@@ -78,7 +78,7 @@ export function ContactAnimatedContent({
             href={instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-[family-name:var(--font-display)] text-xl tracking-wide text-white/85 transition-opacity hover:text-white"
+            className="font-[family-name:var(--font-display)] text-base break-all tracking-normal text-white/85 transition-opacity hover:text-white md:text-xl md:tracking-wide"
           >
             {instagramLabel}
           </a>

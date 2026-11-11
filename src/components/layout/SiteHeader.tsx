@@ -8,10 +8,10 @@ export async function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5 md:px-10">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-5 md:gap-6 md:px-10">
         <Link
           href="/"
-          className="font-[family-name:var(--font-display)] text-sm tracking-[0.15em] transition-opacity hover:opacity-60"
+          className="shrink-0 font-[family-name:var(--font-display)] text-xs tracking-[0.1em] transition-opacity hover:opacity-60 md:text-sm md:tracking-[0.15em]"
         >
           {site.artistNameEn}
         </Link>
