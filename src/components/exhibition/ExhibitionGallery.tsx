@@ -2,11 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Lightbox from "yet-another-react-lightbox";
 
+import { ImageZoomLightbox } from "@/components/ui/ImageZoomLightbox";
 import { assetPath } from "@/lib/utils/assetPath";
-
-import "yet-another-react-lightbox/styles.css";
 
 interface ExhibitionGalleryProps {
   title: string;
@@ -17,10 +15,7 @@ export function ExhibitionGallery({ title, images }: ExhibitionGalleryProps) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const slides = images.map((src, imageIndex) => ({
-    src: assetPath(src),
-    alt: `${title} installation ${imageIndex + 1}`,
-  }));
+  const currentImage = images[index];
 
   return (
     <>
@@ -48,15 +43,11 @@ export function ExhibitionGallery({ title, images }: ExhibitionGalleryProps) {
         ))}
       </div>
 
-      <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        index={index}
-        slides={slides}
-        styles={{
-          container: { backgroundColor: "rgba(30, 30, 30, 0.96)" },
-          button: { filter: "none" },
-        }}
+      <ImageZoomLightbox
+        open={open && Boolean(currentImage)}
+        src={currentImage ? assetPath(currentImage) : ""}
+        alt={currentImage ? `${title} installation ${index + 1}` : title}
+        onClose={() => setOpen(false)}
       />
     </>
   );
