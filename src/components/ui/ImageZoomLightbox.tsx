@@ -6,6 +6,8 @@ import { createPortal } from "react-dom";
 import { cn } from "@/lib/utils/cn";
 
 const ZOOM_LEVELS = [1, 2, 3, 4] as const;
+const MIN_ZOOM = ZOOM_LEVELS[0];
+const MAX_ZOOM = ZOOM_LEVELS[ZOOM_LEVELS.length - 1];
 const PADDING_X = 48;
 const PADDING_Y = 72;
 
@@ -153,6 +155,14 @@ function pointInRect(x: number, y: number, rect: DOMRect) {
   return x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
 }
 
+function pointerDistance(a: { x: number; y: number }, b: { x: number; y: number }) {
+  return Math.hypot(a.x - b.x, a.y - b.y);
+}
+
+function pointerMidpoint(a: { x: number; y: number }, b: { x: number; y: number }) {
+  return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+}
+
 export function ImageZoomLightbox({ open, src, alt, onClose }: ImageZoomLightboxProps) {
   if (!open || typeof document === "undefined") return null;
 
@@ -170,6 +180,14 @@ function ZoomStage({ src, alt, onClose }: Omit<ImageZoomLightboxProps, "open">) 
     originX: number;
     originY: number;
   } | null>(null);
+  const pointersRef = useRef(new Map<number, { x: number; y: number }>());
+  const pinchRef = useRef<{
+    zoom: number;
+    distance: number;
+    contentX: number;
+    contentY: number;
+  } | null>(null);
+  const suppressClickRef = useRef(false);
 
   const [natural, setNatural] = useState<Size | null>(null);
   const [stageSize, setStageSize] = useState<Size>({ width: 0, height: 0 });
@@ -235,6 +253,19 @@ function ZoomStage({ src, alt, onClose }: Omit<ImageZoomLightboxProps, "open">) 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [onClose]);
+
+  useEffect(() => {
+    if (canHover) return;
+    const stage = stageRef.current;
+    if (!stage) return;
+
+    const blockBrowserPinch = (event: TouchEvent) => {
+      if (event.touches.length > 1) event.preventDefault();
+    };
+
+    stage.addEventListener("touchmove", blockBrowserPinch, { passive: false });
+    return () => stage.removeEventListener("touchmove", blockBrowserPinch);
+  }, [canHover]);
 
   useEffect(() => {
     if (!canHover) return;
@@ -303,7 +334,109 @@ function ZoomStage({ src, alt, onClose }: Omit<ImageZoomLightboxProps, "open">) 
     setDragging(false);
   };
 
-  const controlsVisible = canHover ? showControls : true;
+  const onTouchPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
+    if (canHover || !frame) return;
+    if (event.target instanceof Element && event.target.closest("button")) return;
+
+    pointersRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    const points = [...pointersRef.current.values()];
+
+    if (points.length >= 2) {
+      const [first, second] = points;
+      const midpoint = pointerMidpoint(first, second);
+      const centerX = frame.left + frame.width / 2 + safePan.x;
+      const centerY = frame.top + frame.height / 2 + safePan.y;
+      pinchRef.current = {
+        zoom,
+        distance: Math.max(pointerDistance(first, second), 1),
+        contentX: (midpoint.x - centerX) / zoom,
+        contentY: (midpoint.y - centerY) / zoom,
+      };
+      dragRef.current = null;
+      setDragging(false);
+      for (const pointerId of pointersRef.current.keys()) {
+        try {
+          event.currentTarget.setPointerCapture(pointerId);
+        } catch {
+          // The pointer can already be inactive in some browsers.
+        }
+      }
+      return;
+    }
+
+    const image = imageRef.current;
+    if (zoom <= 1 || !image || !pointInRect(event.clientX, event.clientY, image.getBoundingClientRect())) {
+      return;
+    }
+
+    dragRef.current = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      originX: safePan.x,
+      originY: safePan.y,
+    };
+    try {
+      event.currentTarget.setPointerCapture(event.pointerId);
+    } catch {
+      // The pointer can already be inactive in some browsers.
+    }
+    setDragging(true);
+  };
+
+  const onTouchPointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
+    if (canHover || !pointersRef.current.has(event.pointerId) || !frame) return;
+    pointersRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+
+    const pinch = pinchRef.current;
+    const points = [...pointersRef.current.values()];
+    if (pinch && points.length >= 2) {
+      const [first, second] = points;
+      const midpoint = pointerMidpoint(first, second);
+      const nextZoom = clamp(pinch.zoom * (pointerDistance(first, second) / pinch.distance), MIN_ZOOM, MAX_ZOOM);
+      const nextPan = clampPan(
+        {
+          x: midpoint.x - pinch.contentX * nextZoom - (frame.left + frame.width / 2),
+          y: midpoint.y - pinch.contentY * nextZoom - (frame.top + frame.height / 2),
+        },
+        nextZoom,
+        frame,
+        stageSize,
+      );
+      setZoom(nextZoom);
+      setPan(nextPan);
+      suppressClickRef.current = true;
+      return;
+    }
+
+    const drag = dragRef.current;
+    if (!drag || drag.pointerId !== event.pointerId) return;
+    setPan(
+      clampPan(
+        {
+          x: drag.originX + (event.clientX - drag.startX),
+          y: drag.originY + (event.clientY - drag.startY),
+        },
+        zoom,
+        frame,
+        stageSize,
+      ),
+    );
+    if (Math.hypot(event.clientX - drag.startX, event.clientY - drag.startY) > 4) {
+      suppressClickRef.current = true;
+    }
+  };
+
+  const onTouchPointerEnd = (event: ReactPointerEvent<HTMLDivElement>) => {
+    pointersRef.current.delete(event.pointerId);
+    if (pointersRef.current.size < 2) pinchRef.current = null;
+    if (dragRef.current?.pointerId === event.pointerId) {
+      dragRef.current = null;
+      setDragging(false);
+    }
+  };
+
+  const controlsVisible = showControls;
   const controls = visual ? controlPosition(visual, stageSize) : null;
   const zoomInDisabled = zoom >= ZOOM_LEVELS[ZOOM_LEVELS.length - 1];
   const zoomOutDisabled = zoom <= ZOOM_LEVELS[0];
@@ -316,7 +449,16 @@ function ZoomStage({ src, alt, onClose }: Omit<ImageZoomLightboxProps, "open">) 
       aria-label={alt}
       tabIndex={-1}
       className="fixed inset-0 z-[80] bg-[rgba(30,30,30,0.96)] outline-none"
+      style={{ touchAction: "none" }}
+      onPointerDown={onTouchPointerDown}
+      onPointerMove={onTouchPointerMove}
+      onPointerUp={onTouchPointerEnd}
+      onPointerCancel={onTouchPointerEnd}
       onClick={(event) => {
+        if (suppressClickRef.current) {
+          suppressClickRef.current = false;
+          return;
+        }
         if (event.target === event.currentTarget) onClose();
       }}
     >
@@ -337,10 +479,10 @@ function ZoomStage({ src, alt, onClose }: Omit<ImageZoomLightboxProps, "open">) 
         alt={alt}
         draggable={false}
         onLoad={(event) => rememberSize(event.currentTarget)}
-        onPointerDown={onImagePointerDown}
-        onPointerMove={onImagePointerMove}
-        onPointerUp={endDrag}
-        onPointerCancel={endDrag}
+        onPointerDown={canHover ? onImagePointerDown : undefined}
+        onPointerMove={canHover ? onImagePointerMove : undefined}
+        onPointerUp={canHover ? endDrag : undefined}
+        onPointerCancel={canHover ? endDrag : undefined}
         onDragStart={(event) => event.preventDefault()}
         className="absolute select-none"
         style={
@@ -365,7 +507,7 @@ function ZoomStage({ src, alt, onClose }: Omit<ImageZoomLightboxProps, "open">) 
         }
       />
 
-      {controls ? (
+      {canHover && controls ? (
         <div
           ref={controlsRef}
           className={cn(
