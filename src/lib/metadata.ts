@@ -22,9 +22,10 @@ export async function getBaseMetadata(): Promise<Metadata> {
       description: `${site.artistName} 작가 포트폴리오`,
       images: [
         {
-          url: site.mainBackgroundImage,
-          width: 2400,
-          height: 1600,
+          url: '/images/main/share-20261118.jpg',
+          width: 1200,
+          height: 806,
+          type: 'image/jpeg',
           alt: `${site.artistName} 대표 작품`,
         },
       ],
@@ -33,7 +34,7 @@ export async function getBaseMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: `${site.artistName} | ${site.artistNameEn}`,
       description: `${site.artistName} 작가 포트폴리오`,
-      images: [site.mainBackgroundImage],
+      images: ['/images/main/share-20261118.jpg'],
     },
   };
 }
