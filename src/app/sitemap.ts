@@ -4,7 +4,7 @@ import { getSiteConfig } from "@/lib/data/getSiteConfig";
 
 export const dynamic = "force-static";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://joohyunkim.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://joohyunkim.kr";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = await getSiteConfig();

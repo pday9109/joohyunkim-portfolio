@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { getSiteConfig } from "@/lib/data/getSiteConfig";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://joohyunkim.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://joohyunkim.kr";
 
 export async function getBaseMetadata(): Promise<Metadata> {
   const site = await getSiteConfig();
